@@ -1,0 +1,5 @@
+{
+  "name": "Vixetext Playground",
+  "description": "An online Markdown editor with live preview and PDF export functionality, inspired by Overleaf. Write in Markdown on one side and see it rendered in real-time on the other.",
+  "requestFramePermissions": []
+}

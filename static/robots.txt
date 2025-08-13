@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://vixetext.com
+
+# Sitemaps
+Sitemap: https://vixetext.com/sitemap.xml

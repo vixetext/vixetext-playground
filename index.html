@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vixetext Playground</title>
+
+    <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-rh="true" property="og:locale" content="pt_BR">
+    <link data-rh="true" rel="icon" href="/static/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/img/favicon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            typography: ({ theme }) => ({
+              DEFAULT: {
+                css: {
+                  '--tw-prose-body': theme('colors.gray[800]'),
+                  '--tw-prose-headings': theme('colors.gray[900]'),
+                  '--tw-prose-lead': theme('colors.gray[700]'),
+                  '--tw-prose-links': theme('colors.blue[600]'),
+                  '--tw-prose-bold': theme('colors.gray[900]'),
+                  '--tw-prose-counters': theme('colors.gray[600]'),
+                  '--tw-prose-bullets': theme('colors.gray[400]'),
+                  '--tw-prose-hr': theme('colors.gray[300]'),
+                  '--tw-prose-quotes': theme('colors.gray[900]'),
+                  '--tw-prose-quote-borders': theme('colors.gray[300]'),
+                  '--tw-prose-captions': theme('colors.gray[700]'),
+                  '--tw-prose-code': theme('colors.gray[900]'),
+                  '--tw-prose-pre-code': theme('colors.gray[100]'),
+                  '--tw-prose-pre-bg': theme('colors.gray[900]'),
+                  '--tw-prose-th-borders': theme('colors.gray[300]'),
+                  '--tw-prose-td-borders': theme('colors.gray[200]'),
+                  '--tw-prose-invert-body': theme('colors.gray[200]'),
+                  '--tw-prose-invert-headings': theme('colors.white'),
+                  '--tw-prose-invert-lead': theme('colors.gray[300]'),
+                  '--tw-prose-invert-links': theme('colors.blue[400]'),
+                  '--tw-prose-invert-bold': theme('colors.white'),
+                  '--tw-prose-invert-counters': theme('colors.gray[400]'),
+                  '--tw-prose-invert-bullets': theme('colors.gray[600]'),
+                  '--tw-prose-invert-hr': theme('colors.gray[700]'),
+                  '--tw-prose-invert-quotes': theme('colors.gray[100]'),
+                  '--tw-prose-invert-quote-borders': theme('colors.gray[700]'),
+                  '--tw-prose-invert-captions': theme('colors.gray[400]'),
+                  '--tw-prose-invert-code': theme('colors.white'),
+                  '--tw-prose-invert-pre-code': theme('colors.gray[300]'),
+                  '--tw-prose-invert-pre-bg': theme('colors.gray[800]'),
+                  '--tw-prose-invert-th-borders': theme('colors.gray[600]'),
+                  '--tw-prose-invert-td-borders': theme('colors.gray[700]'),
+                },
+              },
+            }),
+          },
+        },
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^18.3.1/",
+    "react/": "https://esm.sh/react@^18.3.1/",
+    "react": "https://esm.sh/react@^18.3.1",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "marked": "https://esm.sh/marked@^13.0.1",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.379.0",
+    "dompurify": "https://esm.sh/dompurify@^3.1.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-white dark:bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
